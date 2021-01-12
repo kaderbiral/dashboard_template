@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+
+<body class="login-page">
+
+    <div class="login-box animated wow swing">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Login Image -->
+                <div class="col-md-5 form-img p-4">
+                    <img src="img/login-page-image.svg" class="img-fluid" alt="Login">
+                </div>
+                <div class="col-md-7 form-col pb-3">
+                    <!-- Logo -->
+                    <h1 class="pt-4 text-center font-weight-bold">Admin<span>TEMP</span></h1>
+                    <!-- Form -->
+                    <form method="POST" action="#" class="p-4">
+                        <!-- User Name -->
+                        <div class="form-group">
+                            <input type="text" name="name" id="name" class="form-control" placeholder="User Name">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <!-- Password -->
+                        <div class="form-group">
+                            <input type="password" name="password" id="password" class="form-control" placeholder="Password">
+                            <i class="fas fa-key"></i>
+                        </div>
+                        <!-- Remember Me -->
+                        <div class="form-group">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customControlInline">
+                                <label class="custom-control-label" for="customControlInline">Remember me</label>
+                            </div>
+                        </div>
+                        <!-- Button -->
+                        <button type="submit" class="btn btn-success btn btn-block">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Javascript Files -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
+    <script src="js/wow.min.js"></script>
+
+    <script>
+        // WOW INIT
+        new WOW().init();
+    </script>
+
+</body>
+
+</html>

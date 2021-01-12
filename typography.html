@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typography</title>
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Start Top Navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <!-- Sidebar Icon -->
+        <div class="sidebar-icon-bg mx-2">
+            <div class="sidebar-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <!-- Logo -->
+        <a class="navbar-brand px-4" href="dashboard.html">Admin<span class="brand">TEMP</span></a>
+        <!-- Navbar Toggler Icon -->
+        <button class="navbar-toggler sidebar-icon-bg" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+        <!-- Top Navbar Elements -->
+        <div class="navbar-collapse collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <!-- Search Button -->
+                <li class="nav-item dropdown">
+                    <form class="search-form my-2 my-lg-0">
+                        <div class="input-group">
+                            <input type="text" class="search" placeholder="Search">
+                            <button type="submit" class="btn">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </form>
+                </li>
+                <!-- Comment Badge -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle btn p-0 mx-3" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-comment icons"></i>
+                        <span class="btn__badge">0</span>
+                    </a>
+                </li>
+                <!-- Message Badge -->
+                <li class="nav-item dropdown example">
+                    <a class="nav-link dropdown-toggle btn p-0 mx-2" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-envelope icons"></i>
+                        <span class="btn__badge">7</span>
+                    </a>
+                    <!-- Message Dropdown Menu -->
+                    <div class="dropdown-menu dropdown-menu-right animated wow flipInX" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">
+                            <img src="img/notification.png" alt="" class="mr-3 mt-3">
+                            <h6>Message 1</h6>
+                            <p class="time"><i class="fas fa-clock"></i> 2 sec ago</p>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </a>
+                        <hr class="dropdown-divider">
+                        <a class="dropdown-item" href="#">
+                            <img src="img/notification.png" alt="" class="mr-3 mt-3">
+                            <h6>Message 2</h6>
+                            <p class="time"><i class="fas fa-clock"></i> 36 mins ago</p>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </a>
+                        <hr class="dropdown-divider">
+                        <a class="dropdown-item" href="#">
+                            <img src="img/notification.png" alt="" class="mr-3 mt-3">
+                            <h6>Message 3</h6>
+                            <p class="time"><i class="fas fa-clock"></i> 5 days ago</p>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </a>
+                        <a class="dropdown-item dropdown-footer text-center" href="#">See All Messages</a>
+                    </div>
+                </li>
+                <!-- Notifications Badge -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle btn p-0 mx-3" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-bell icons"></i>
+                        <span class="btn__badge">5</span>
+                    </a>
+                    <!-- Notifications Dropdown Menu -->
+                    <div class="dropdown-menu dropdown-menu-right animated wow flipInX" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">
+                            <img src="img/notification.png" alt="" class="mr-3 mt-3">
+                            <h6>Notification 1</h6>
+                            <p class="time"><i class="fas fa-clock"></i> 5 sec ago</p>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </a>
+                        <hr class="dropdown-divider">
+                        <a class="dropdown-item" href="#">
+                            <img src="img/notification.png" alt="" class="mr-3 mt-3">
+                            <h6>Notification 2</h6>
+                            <p class="time"><i class="fas fa-clock"></i> 56 mins ago</p>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </a>
+                        <hr class="dropdown-divider">
+                        <a class="dropdown-item" href="#">
+                            <img src="img/notification.png" alt="" class="mr-3 mt-3">
+                            <h6>Notification 3</h6>
+                            <p class="time"><i class="fas fa-clock"></i> 2 days ago</p>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </a>
+                        <a class="dropdown-item dropdown-footer text-center" href="#">See All Notifications</a>
+                    </div>
+                </li>
+                <!-- Top Navbar Divider -->
+                <div class="topbar-divider d-none d-sm-block"></div>
+                <!-- User Profile -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle p-0 mx-2" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="img/avatar.jpg" class="img-fluid user-profile" alt="Avatar">
+                    </a>
+                    <!-- User Profile Dropdown Menu -->
+                    <div class="dropdown-menu dropdown-menu-right animated wow flipInX" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#"><i class="fas fa-user mr-2"></i> Profile</a>
+                        <a class="dropdown-item" href="#"><i class="fas fa-cog mr-2"></i> Settings</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#sign-out"><i class="fas fa-sign-out-alt mr-2"></i>Sign Out</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Modal -->
+    <div class="modal fade" id="sign-out">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Are you sure you want to sign out?</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Stay Here</button>
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Sign Out</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- End Top Navbar -->
+
+    <!-- ===================================================================================================================================================================================== -->
+    <!-- ===================================================================================================================================================================================== -->
+
+
+    <!-- Start Wrapper -->
+
+    <div class="wrapper d-flex">
+        <!-- Sidebar -->
+        <div class="sidebar-menu">
+            <div class="sidebar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="dashboard.html" class="nav-link px-3">
+                            <i class="fas fa-tachometer-alt icon px-2"></i>
+                            <span class="text ">Dashboard</span>
+                        </a>
+                        <hr class="sidebar-divider">
+                    </li>
+                    <li class="nav-item">
+                        <a href="user-profile.html" class="nav-link px-3">
+                            <i class="fas fa-user icon px-2"></i>
+                            <span class="text">User Profile</span>
+                        </a>
+                        <hr class="sidebar-divider">
+                    </li>
+                    <li class="nav-item">
+                        <a href="table-list.html" class="nav-link px-3">
+                            <i class="fas fa-table icon px-2"></i>
+                            <span class="text">Table List</span>
+                        </a>
+                        <hr class="sidebar-divider">
+                    </li>
+                    <li class="nav-item">
+                        <a href="charts.html" class="nav-link px-3">
+                            <i class="fas fa-chart-pie icon px-2"></i>
+                            <span class="text">Charts</span>
+                        </a>
+                        <hr class="sidebar-divider">
+                    </li>
+                    <li class="nav-item">
+                        <a href="maps.html" class="nav-link px-3">
+                            <i class="fas fa-map-marker-alt icon px-2"></i>
+                            <span class="text">Maps</span>
+                        </a>
+                        <hr class="sidebar-divider">
+                    </li>
+                    <li class="nav-item">
+                        <a href="notifications.html" class="nav-link px-3">
+                            <i class="fas fa-bell icon px-2"></i>
+                            <span class="text">Notifications</span>
+                        </a>
+                        <hr class="sidebar-divider">
+                    </li>
+                    <li class="nav-item">
+                        <a href="typography.html" class="nav-link px-3 active">
+                            <i class="fas fa-font icon px-2"></i>
+                            <span class="text">Typography</span>
+                        </a>
+                        <hr class="sidebar-divider">
+                    </li>
+                    <li class="nav-item">
+                        <a href="404-page.html" class="nav-link px-3">
+                            <i class="fas fa-bug icon px-2"></i>
+                            <span class="text">404 Pages</span>
+                        </a>
+                        <hr class="sidebar-divider">
+                    </li>
+                    <li class="nav-item sign-out-icon">
+                        <hr class="sidebar-divider">
+                        <a href="#" class="nav-link px-3" data-toggle="modal" data-target="#sign-out">
+                            <i class="fas fa-sign-out-alt icon px-2"></i>
+                            <span class="text">Sign Out</span>
+                        </a>
+                        <hr class="sidebar-divider">
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ===================================================================================================================================================================================== -->
+        <!-- ===================================================================================================================================================================================== -->
+
+        <!-- Start Main -->
+
+        <div class="content">
+            <div class="container-fluid">
+                <!-- Top Main  -->
+                <div class="row mb-3 page-top">
+                    <div class="col-md-6">
+                        <h1>Typhography</h1>
+                    </div>
+                    <div class="col-md-6 text-right">
+                        <button type="submit" class="btn btn-success">
+                            <i class="fas fa-download mr-2"></i> Download Typography
+                        </button>
+                    </div>
+                </div>
+                <!-- Typhography -->
+                <div class="row mt-4 mb-5">
+                    <div class="col-md-12">
+                        <div class="col-md-12 profile-form p-5 bg-white">
+                            <dl class="row">
+                                <dt class="col-sm-3">Description lists</dt>
+                                <dd class="col-sm-9">
+                                    <p class="h1">h1. Bootstrap heading</p>
+                                    <p class="h2">h2. Bootstrap heading</p>
+                                    <p class="h3">h3. Bootstrap heading</p>
+                                    <p class="h4">h4. Bootstrap heading</p>
+                                    <p class="h5">h5. Bootstrap heading</p>
+                                    <p class="h6">h6. Bootstrap heading</p>
+                                </dd> 
+                                <dt class="col-sm-3 pt-4">Inline Text Elements</dt>
+                                <dd class="col-sm-9 pt-4">
+                                    <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+                                    <p><del>This line of text is meant to be treated as deleted text.</del></p>
+                                    <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+                                    <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+                                    <p><u>This line of text will render as underlined</u></p>
+                                    <p><small>This line of text is meant to be treated as fine print.</small></p>
+                                    <p><strong>This line rendered as bold text.</strong></p>
+                                    <p><em>This line rendered as italicized text.</em></p>
+                                </dd>
+                                <dt class="col-sm-3 pt-4">List Inline</dt>
+                                <dd class="col-sm-9 pt-4">
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">Lorem ipsum</li>
+                                        <li class="list-inline-item">Phasellus iaculis</li>
+                                        <li class="list-inline-item">Nulla volutpat</li>
+                                    </ul>
+                                </dd>
+                                <dt class="col-sm-3 pt-4">Naming a Source</dt>
+                                <dd class="col-sm-9 pt-4">
+                                    <blockquote class="blockquote">
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                    <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                                    </blockquote>
+                                </dd>
+                            </dl>
+
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Footer -->
+                <div class="row footer font-small text-muted">
+                    <div class="col-md-6 pl-4">
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a href="#" class="text-muted">Support</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="text-muted">Help Center</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="text-muted">Privacy</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="text-muted">Terms</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 text-right pr-0">
+                        <p>Created By <span>Kader Biral </span> | &copy; 2020 All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!---------- End Wrapper ---------->
+    </div>
+
+    <!-- Javascript Files -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.slimscroll.min.js"></script>
+    <script src="js/sidebar_toggle.js"></script>
+    <script src="js/wow.min.js"></script>
+
+    <script>
+        // WOW INIT
+        new WOW().init();
+    </script>
+
+</body>
+
+</html>

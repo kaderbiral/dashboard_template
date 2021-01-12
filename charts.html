@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charts</title>
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Start Top Navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <!-- Sidebar Icon -->
+        <div class="sidebar-icon-bg mx-2">
+            <div class="sidebar-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <!-- Logo -->
+        <a class="navbar-brand px-4" href="dashboard.html">Admin<span class="brand">TEMP</span></a>
+        <!-- Navbar Toggler Icon -->
+        <button class="navbar-toggler sidebar-icon-bg" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+        <!-- Top Navbar Elements -->
+        <div class="navbar-collapse collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <!-- Search Button -->
+                <li class="nav-item dropdown">
+                    <form class="search-form my-2 my-lg-0">
+                        <div class="input-group">
+                            <input type="text" class="search" placeholder="Search">
+                            <button type="submit" class="btn">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </form>
+                </li>
+                <!-- Comment Badge -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle btn p-0 mx-3" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-comment icons"></i>
+                        <span class="btn__badge">0</span>
+                    </a>
+                </li>
+                <!-- Message Badge -->
+                <li class="nav-item dropdown example">
+                    <a class="nav-link dropdown-toggle btn p-0 mx-2" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-envelope icons"></i>
+                        <span class="btn__badge">7</span>
+                    </a>
+                    <!-- Message Dropdown Menu -->
+                    <div class="dropdown-menu dropdown-menu-right animated wow flipInX" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">
+                            <img src="img/notification.png" alt="" class="mr-3 mt-3">
+                            <h6>Message 1</h6>
+                            <p class="time"><i class="fas fa-clock"></i> 2 sec ago</p>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </a>
+                        <hr class="dropdown-divider">
+                        <a class="dropdown-item" href="#">
+                            <img src="img/notification.png" alt="" class="mr-3 mt-3">
+                            <h6>Message 2</h6>
+                            <p class="time"><i class="fas fa-clock"></i> 36 mins ago</p>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </a>
+                        <hr class="dropdown-divider">
+                        <a class="dropdown-item" href="#">
+                            <img src="img/notification.png" alt="" class="mr-3 mt-3">
+                            <h6>Message 3</h6>
+                            <p class="time"><i class="fas fa-clock"></i> 5 days ago</p>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </a>
+                        <a class="dropdown-item dropdown-footer text-center" href="#">See All Messages</a>
+                    </div>
+                </li>
+                <!-- Notifications Badge -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle btn p-0 mx-3" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-bell icons"></i>
+                        <span class="btn__badge">5</span>
+                    </a>
+                    <!-- Notifications Dropdown Menu -->
+                    <div class="dropdown-menu dropdown-menu-right animated wow flipInX" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">
+                            <img src="img/notification.png" alt="" class="mr-3 mt-3">
+                            <h6>Notification 1</h6>
+                            <p class="time"><i class="fas fa-clock"></i> 5 sec ago</p>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </a>
+                        <hr class="dropdown-divider">
+                        <a class="dropdown-item" href="#">
+                            <img src="img/notification.png" alt="" class="mr-3 mt-3">
+                            <h6>Notification 2</h6>
+                            <p class="time"><i class="fas fa-clock"></i> 56 mins ago</p>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </a>
+                        <hr class="dropdown-divider">
+                        <a class="dropdown-item" href="#">
+                            <img src="img/notification.png" alt="" class="mr-3 mt-3">
+                            <h6>Notification 3</h6>
+                            <p class="time"><i class="fas fa-clock"></i> 2 days ago</p>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </a>
+                        <a class="dropdown-item dropdown-footer text-center" href="#">See All Notifications</a>
+                    </div>
+                </li>
+                <!-- Top Navbar Divider -->
+                <div class="topbar-divider d-none d-sm-block"></div>
+                <!-- User Profile -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle p-0 mx-2" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="img/avatar.jpg" class="img-fluid user-profile" alt="Avatar">
+                    </a>
+                    <!-- User Profile Dropdown Menu -->
+                    <div class="dropdown-menu dropdown-menu-right animated wow flipInX" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#"><i class="fas fa-user mr-2"></i> Profile</a>
+                        <a class="dropdown-item" href="#"><i class="fas fa-cog mr-2"></i> Settings</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#sign-out"><i class="fas fa-sign-out-alt mr-2"></i>Sign Out</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Modal -->
+    <div class="modal fade" id="sign-out">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Are you sure you want to sign out?</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Stay Here</button>
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Sign Out</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- End Top Navbar -->
+
+    <!-- ===================================================================================================================================================================================== -->
+    <!-- ===================================================================================================================================================================================== -->
+
+
+    <!---------- Start Wrapper ---------->
+
+    <div class="wrapper d-flex">
+
+        <!-- Sidebar -->
+        <div class="sidebar-menu">
+            <div class="sidebar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="dashboard.html" class="nav-link px-3">
+                            <i class="fas fa-tachometer-alt icon px-2"></i>
+                            <span class="text ">Dashboard</span>
+                        </a>
+                        <hr class="sidebar-divider">
+                    </li>
+                    <li class="nav-item">
+                        <a href="user-profile.html" class="nav-link px-3">
+                            <i class="fas fa-user icon px-2"></i>
+                            <span class="text">User Profile</span>
+                        </a>
+                        <hr class="sidebar-divider">
+                    </li>
+                    <li class="nav-item">
+                        <a href="table-list.html" class="nav-link px-3">
+                            <i class="fas fa-table icon px-2"></i>
+                            <span class="text">Table List</span>
+                        </a>
+                        <hr class="sidebar-divider">
+                    </li>
+                    <li class="nav-item">
+                        <a href="charts.html" class="nav-link px-3 active">
+                            <i class="fas fa-chart-pie icon px-2"></i>
+                            <span class="text">Charts</span>
+                        </a>
+                        <hr class="sidebar-divider">
+                    </li>
+                    <li class="nav-item">
+                        <a href="maps.html" class="nav-link px-3">
+                            <i class="fas fa-map-marker-alt icon px-2"></i>
+                            <span class="text">Maps</span>
+                        </a>
+                        <hr class="sidebar-divider">
+                    </li>
+                    <li class="nav-item">
+                        <a href="notifications.html" class="nav-link px-3">
+                            <i class="fas fa-bell icon px-2"></i>
+                            <span class="text">Notifications</span>
+                        </a>
+                        <hr class="sidebar-divider">
+                    </li>
+                    <li class="nav-item">
+                        <a href="typography.html" class="nav-link px-3">
+                            <i class="fas fa-font icon px-2"></i>
+                            <span class="text">Typography</span>
+                        </a>
+                        <hr class="sidebar-divider">
+                    </li>
+                    <li class="nav-item">
+                        <a href="404-page.html" class="nav-link px-3">
+                            <i class="fas fa-bug icon px-2"></i>
+                            <span class="text">404 Pages</span>
+                        </a>
+                        <hr class="sidebar-divider">
+                    </li>
+                    <li class="nav-item sign-out-icon">
+                        <hr class="sidebar-divider">
+                        <a href="#" class="nav-link px-3" data-toggle="modal" data-target="#sign-out">
+                            <i class="fas fa-sign-out-alt icon px-2"></i>
+                            <span class="text">Sign Out</span>
+                        </a>
+                        <hr class="sidebar-divider">
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ===================================================================================================================================================================================== -->
+        <!-- ===================================================================================================================================================================================== -->
+
+        <!-- Start Main -->
+        <div class="content">
+            <div class="container-fluid">
+                <!-- Top Main  -->
+                <div class="row mb-3 page-top">
+                    <div class="col-md-6">
+                        <h1>Charts</h1>
+                    </div>
+                    <div class="col-md-6 text-right">
+                        <button type="submit" class="btn btn-success">
+                            <i class="fas fa-download mr-2"></i> Generate Charts
+                        </button>
+                    </div>
+                </div>
+                <!-- Multiple Line and Doughnut Chart -->
+                <div class="row mt-4 mb-4">
+                    <!-- Multiple Line Chart -->
+                    <div class="col-md-8">
+                        <div class="col-md-12 chart p-4">
+                            <div id="accordionRevenue">
+                                <div class="chart-card">
+                                    <div class="chart-card-header" id="headingRevenue">
+                                        <h5 class="mb-0">
+                                            Monthly Revenue By Continent ($)
+                                            <button class="btn btn-link" data-toggle="collapse"
+                                                data-target="#collapseRevenue" aria-expanded="true"
+                                                aria-controls="collapseRevenue">
+                                                <i class="fas fa-minus-circle "></i>
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseRevenue" class="collapse show" aria-labelledby="headingRevenue"
+                                        data-parent="#accordionRevenue">
+                                        <div class="chart-card-body p-4">
+                                            <canvas id="multiple_line_chart"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Doughnut Chart -->
+                    <div class="col-md-4">
+                        <div class="col-md-12 chart p-4">
+                            <div id="accordionOrderType">
+                                <div class="chart-card">
+                                    <div class="chart-card-header" id="headingOrderType">
+                                        <h5 class="mb-0">
+                                            Order Type (%)
+                                            <button class="btn btn-link" data-toggle="collapse"
+                                                data-target="#collapseOrderType" aria-expanded="true"
+                                                aria-controls="collapseOrderType">
+                                                <i class="fas fa-minus-circle "></i>
+                                            </button>
+                                        </h5>
+                                    </div>
+
+                                    <div id="collapseOrderType" class="collapse show" aria-labelledby="headingOrderType"
+                                        data-parent="#accordionOrderType">
+                                        <div class="chart-card-body p-4">
+                                            <canvas id="doughnut_chart" style="height:98vh; width:80vh"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pie and Radar Chart -->
+                <div class="row mt-4 mb-4">
+                    <!-- Pie Chart -->
+                    <div class="col-md-4">
+                        <div class="col-md-12 chart p-4">
+                            <div id="accordionPie">
+                                <div class="chart-card">
+                                    <div class="chart-card-header" id="headingPie">
+                                        <h5 class="mb-0">
+                                            Sales By Gender (%)
+                                            <button class="btn btn-link" data-toggle="collapse"
+                                                data-target="#collapsePie" aria-expanded="true"
+                                                aria-controls="collapsePie">
+                                                <i class="fas fa-minus-circle "></i>
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapsePie" class="collapse show" aria-labelledby="headingPie"
+                                        data-parent="#accordionPie">
+                                        <div class="chart-card-body p-4">
+                                            <canvas id="pie_chart" style="height:98vh; width:80vh"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Multiple Bar Chart -->
+                    <div class="col-md-8">
+                        <div class="col-md-12 chart p-4">
+                            <div id="accordionRadar">
+                                <div class="chart-card">
+                                    <div class="chart-card-header" id="headingRadar">
+                                        <h5 class="mb-0">
+                                            Monthly Sales By Gender (%)
+                                            <button class="btn btn-link" data-toggle="collapse"
+                                                data-target="#collapseRadar" aria-expanded="true"
+                                                aria-controls="collapseRadar">
+                                                <i class="fas fa-minus-circle "></i>
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseRadar" class="collapse show" aria-labelledby="headingRadar"
+                                        data-parent="#accordionRadar">
+                                        <div class="chart-card-body p-4">
+                                            <canvas id="multiple_bar_chart"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer -->
+                <div class="row footer font-small text-muted">
+                    <div class="col-md-6 pl-4">
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a href="#" class="text-muted">Support</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="text-muted">Help Center</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="text-muted">Privacy</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="text-muted">Terms</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 text-right pr-0">
+                        <p>Created By <span>Kader Biral </span> | &copy; 2020 All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- End Wrapper -->
+    </div>
+
+    <!-- Javascript Files -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.slimscroll.min.js"></script>
+    <script src="js/sidebar_toggle.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="js/multiple_line_chart.js"></script>
+    <script src="js/multiple_bar_chart.js"></script>
+    <script src="js/doughnut_chart.js"></script>
+    <script src="js/pie_chart.js"></script>
+
+    <script>
+        // WOW INIT
+        new WOW().init();
+    </script>
+
+</body>
+
+</html>
